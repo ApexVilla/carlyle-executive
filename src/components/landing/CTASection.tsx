@@ -48,7 +48,7 @@ const CTASection = () => {
                 whileInView={{ opacity: 1, y: 0 }}
                 viewport={{ once: true, margin: "-50px" }}
                 transition={{ delay: 0.2 + i * 0.1 }}
-                className="group relative bg-white/40 backdrop-blur-3xl border border-white/40 p-10 rounded-[2.5rem] flex flex-col items-center gap-4 transition-all duration-500 hover:bg-white/60 hover:shadow-[0_20px_40px_rgba(0,0,0,0.04)] cursor-pointer overflow-hidden"
+                className="group relative bg-white/10 backdrop-blur-3xl border border-white/20 p-10 rounded-[2.5rem] flex flex-col items-center gap-4 transition-all duration-500 hover:bg-white/20 hover:shadow-[0_20px_40px_rgba(0,0,0,0.03)] cursor-pointer overflow-hidden"
               >
                 <div className="absolute inset-0 bg-gradient-to-br from-white/20 to-transparent pointer-events-none" />
                 <info.icon className="w-6 h-6 text-primary group-hover:scale-110 transition-transform duration-500 stroke-[1.5]" />

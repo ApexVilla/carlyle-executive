@@ -60,7 +60,7 @@ const ResultsSection = () => {
                 scale: 1.02,
                 transition: { type: "spring", stiffness: 400, damping: 25 }
               }}
-              className="group relative bg-white/40 backdrop-blur-3xl border border-white/40 p-8 rounded-[3rem] text-center flex flex-col items-center gap-6 shadow-[0_20px_50px_rgba(0,0,0,0.05)] cursor-default overflow-hidden"
+              className="group relative bg-white/10 backdrop-blur-3xl border border-white/20 p-8 rounded-[3rem] text-center flex flex-col items-center gap-6 shadow-[0_20px_50px_rgba(0,0,0,0.04)] cursor-default overflow-hidden"
             >
               <div className="absolute inset-0 bg-gradient-to-br from-white/20 to-transparent pointer-events-none" />
               

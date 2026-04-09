@@ -13,7 +13,7 @@ const Navbar = () => {
     <nav
       className={`fixed top-0 left-0 right-0 z-50 transition-all duration-700 flex items-center ${
         scrolled 
-          ? "bg-white/40 backdrop-blur-2xl border-b border-white/40 shadow-[0_20px_50px_rgba(0,0,0,0.06),_inset_0_0_20px_rgba(255,255,255,0.4)] py-3" 
+          ? "bg-white/10 backdrop-blur-3xl border-b border-white/20 shadow-[0_20px_50px_rgba(0,0,0,0.04),_inset_0_0_20px_rgba(255,255,255,0.2)] py-3" 
           : "bg-transparent py-6 border-b border-transparent"
       }`}
     >

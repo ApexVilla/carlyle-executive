@@ -46,7 +46,7 @@ const ServicesSection = () => {
                 scale: 1.02,
                 transition: { type: "spring", stiffness: 400, damping: 25 }
               }}
-              className="group relative bg-white/40 backdrop-blur-2xl border border-white/40 p-8 rounded-[2.5rem] flex flex-col gap-6 hover:bg-white/60 hover:shadow-[0_25px_50px_rgba(0,0,0,0.06)] cursor-default overflow-hidden"
+              className="group relative bg-white/10 backdrop-blur-3xl border border-white/20 p-8 rounded-[2.5rem] flex flex-col gap-6 hover:bg-white/20 hover:shadow-[0_25px_50px_rgba(0,0,0,0.04)] cursor-default overflow-hidden"
             >
               {/* Glossy Reflection Overlay */}
               <div className="absolute inset-0 bg-gradient-to-br from-white/10 to-transparent pointer-events-none" />
