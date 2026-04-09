@@ -6,39 +6,39 @@
 
 @layer base {
   :root {
-    --background: 0 0% 4%;
-    --foreground: 0 0% 92%;
+    --background: 40 20% 98%;
+    --foreground: 0 0% 12%;
 
-    --card: 0 0% 7%;
-    --card-foreground: 0 0% 92%;
+    --card: 0 0% 100%;
+    --card-foreground: 0 0% 12%;
 
-    --popover: 0 0% 7%;
-    --popover-foreground: 0 0% 92%;
+    --popover: 0 0% 100%;
+    --popover-foreground: 0 0% 12%;
 
-    --primary: 43 54% 55%;
-    --primary-foreground: 0 0% 4%;
+    --primary: 43 65% 42%;
+    --primary-foreground: 40 20% 98%;
 
-    --secondary: 0 0% 12%;
-    --secondary-foreground: 0 0% 85%;
+    --secondary: 40 15% 93%;
+    --secondary-foreground: 0 0% 25%;
 
-    --muted: 0 0% 15%;
-    --muted-foreground: 0 0% 55%;
+    --muted: 40 10% 90%;
+    --muted-foreground: 0 0% 45%;
 
-    --accent: 43 54% 55%;
-    --accent-foreground: 0 0% 4%;
+    --accent: 43 65% 42%;
+    --accent-foreground: 40 20% 98%;
 
     --destructive: 0 84.2% 60.2%;
     --destructive-foreground: 210 40% 98%;
 
-    --border: 0 0% 16%;
-    --input: 0 0% 16%;
-    --ring: 43 54% 55%;
+    --border: 40 10% 88%;
+    --input: 40 10% 88%;
+    --ring: 43 65% 42%;
 
     --radius: 0.25rem;
 
-    --gold: 43 54% 55%;
-    --gold-light: 43 40% 70%;
-    --graphite: 0 0% 20%;
+    --gold: 43 65% 42%;
+    --gold-light: 43 54% 55%;
+    --graphite: 0 0% 12%;
     --graphite-light: 0 0% 30%;
 
     --font-display: 'Cormorant Garamond', Georgia, serif;

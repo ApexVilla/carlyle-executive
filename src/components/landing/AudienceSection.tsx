@@ -1,4 +1,4 @@
-import { useScrollReveal } from "@/hooks/useScrollReveal";
+import { motion } from "framer-motion";
 
 const audiences = [
   "Empresas em crescimento que precisam de estrutura comercial",
@@ -8,37 +8,38 @@ const audiences = [
 ];
 
 const AudienceSection = () => {
-  const { ref, isVisible } = useScrollReveal();
-
   return (
-    <section className="section-padding" ref={ref}>
+    <section className="section-padding">
       <div className="container">
         <div className="max-w-3xl">
-          <div
-            className={`mb-16 transition-all duration-700 ${
-              isVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-8"
-            }`}
+          <motion.div
+            initial={{ opacity: 0, y: 30 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true, margin: "-100px" }}
+            transition={{ duration: 0.8 }}
+            className="mb-16"
           >
-            <p className="text-sm tracking-[0.3em] uppercase text-primary font-body mb-4">Para quem</p>
-            <h2 className="font-display text-3xl md:text-4xl lg:text-5xl font-light text-foreground">
+            <p className="text-sm tracking-[0.3em] uppercase text-primary font-body mb-4 font-medium">Para quem</p>
+            <h2 className="font-display text-4xl md:text-5xl lg:text-6xl font-light text-foreground">
               Se você se reconhece aqui
             </h2>
-          </div>
+          </motion.div>
 
           <div className="space-y-6">
             {audiences.map((a, i) => (
-              <div
+              <motion.div
                 key={i}
-                className={`flex items-start gap-6 transition-all duration-700 ${
-                  isVisible ? "opacity-100 translate-x-0" : "opacity-0 -translate-x-8"
-                }`}
-                style={{ transitionDelay: `${300 + i * 120}ms` }}
+                initial={{ opacity: 0, x: -20 }}
+                whileInView={{ opacity: 1, x: 0 }}
+                viewport={{ once: true, margin: "-50px" }}
+                transition={{ duration: 0.6, delay: i * 0.15 }}
+                className="flex items-start gap-6 border-l border-primary/20 pl-6 hover:border-primary transition-colors duration-500 py-4"
               >
-                <span className="text-primary mt-1.5 text-lg">—</span>
-                <p className="text-lg md:text-xl text-secondary-foreground font-display font-light leading-relaxed">
+                <span className="text-primary mt-1 text-lg font-light">—</span>
+                <p className="text-lg md:text-xl lg:text-2xl text-foreground font-display font-light leading-relaxed">
                   {a}
                 </p>
-              </div>
+              </motion.div>
             ))}
           </div>
         </div>
